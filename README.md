@@ -27,11 +27,24 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-### 3️⃣ Python 코드 실행
+
+### 3️⃣ Gemini API 키 환경 변수 설정
+.env 파일 생성 후 아래 내용 추가:
+```txt
+GEMINI_API_KEY=여기에_토큰_입력
+```
+
+Python 코드에서 불러오기:
+```bash
+import os
+gemini_key = os.getenv("GEMINI_API_KEY")
+```
+
+### 4️⃣ Python 코드 실행
 ```bash
 python3 Raspberrypi.py
 ```
-### 4️⃣ Arduino 코드 업로드
+### '5' Arduino 코드 업로드
 - Arduino IDE에서 arduino_code.ino 업로드
 - 보드: Arduino Mega 2560 선택
 - USB로 Raspberry Pi와 연결
