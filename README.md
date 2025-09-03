@@ -44,7 +44,7 @@ gemini_key = os.getenv("GEMINI_API_KEY")
 ```bash
 python3 Raspberrypi.py
 ```
-### '5' Arduino 코드 업로드
+### 5️⃣ Arduino 코드 업로드
 - Arduino IDE에서 arduino_code.ino 업로드
 - 보드: Arduino Mega 2560 선택
 - USB로 Raspberry Pi와 연결
